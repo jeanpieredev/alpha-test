@@ -14,7 +14,7 @@
   </head>
   <body>
     <div id="loading-screen"><span class="loader"></div>
-    <main class="wrapper">
+    <main class="wrapper" id="is-not-registered">
       <img class="logo" src="/assets/imgs/logo.jpg" alt="Logo" />
       <h1 class="title">Torneo de Hacking Ético</h1>
       <p>
@@ -23,6 +23,30 @@
       </p>
       <a class="bg-button" href="/inscription.html"> COMENZAR </a>
     </main>
+    <main class="wrapper hidden" id="is-registered">
+      <a href="/">
+        <img class="logo" src="/assets/imgs/logo.jpg" alt="Logo" />
+      </a>
+      <h2 class="title">🎉 <span id="nicknameTitle"></span>  Ya te encuentras inscrito!</h2>
+      <p>
+        Tus datos han sido registrados con éxito. Nos vemos en el torneo.
+      </p>
+      <ul class="data-user">
+        <li id="full-name"><strong>Nombre Completo:</strong> [Nombre Completo]</li>
+        <li id="nickname"><strong>Alias / Nickname:</strong> [Alias]</li>
+        <li  id="email"><strong >Email:</strong> [Email]</li>
+        <li id="experience-level">  <strong>Nivel de Experiencia:</strong> [Nivel de Experiencia]</li>   
+        <li id="favorite-language"> <strong>Lenguaje Favorito:</strong> [Lenguaje Favorito]</li>
+        <li id="terms"> <strong>Acepta los términos y condiciones</strong></li>    
+      </ul>
+
+      <div class="btns">
+        <a class="bg-button" href="/"> VOLVER AL INICIO </a>
+        <a class="bg-button" href="/inscription.html"> INDICAR OTROS DATOS </a>
+      </div>
+      
+    </main>
     <script src="/assets/scripts/screen-loader.js"></script>
+    <script type="module" src="/assets/scripts/check-register.js"></script>
   </body>
 </html>
