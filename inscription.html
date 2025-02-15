@@ -10,7 +10,9 @@
   <body>
     <div id="loading-screen"><span class="loader"></span></div>
     <main class="wrapper">
-      <img class="logo" src="/assets/imgs/logo.jpg" alt="Logo" />
+      <a href="/">
+        <img class="logo" src="/assets/imgs/logo.jpg" alt="Logo" />
+      </a>
       <h1 class="title">Formulario de Inscripción</h1>
       <form action="" id="inscription-form" class="form">
         <div class="input-group">
@@ -18,7 +20,7 @@
           <input type="text" id="full-name" name="full_name" required />
         </div>
         <div class="input-group">
-          <label for="nickname">Alias/Nickname</label>
+          <label for="nickname">Alias / Nickname</label>
           <input type="text" id="nickname" name="nickname" required />
         </div>
         <div class="input-group">
@@ -52,6 +54,6 @@
       </form>
     </main>
     <script src="/assets/scripts/screen-loader.js"></script>
-    <script src="/assets/scripts/form.js"></script>
+    <script type="module" src="/assets/scripts/form.js"></script>
   </body>
 </html>
