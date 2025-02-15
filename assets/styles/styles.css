@@ -19,6 +19,11 @@ html {
   justify-content: center;
 }
 
+body.loading {
+  overflow: hidden;
+  height: 100vh;
+}
+
 main {
   width: 100%;
   max-width: 740px;
@@ -213,10 +218,6 @@ select:focus {
 @media screen and (max-width: 425px) {
   .wrapper {
     padding: 3rem 1.5rem;
-  }
-
-  #loading-screen {
-    height: 120vh;
   }
 
   #is-registered h2 {
