@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inscripción al Torneo de Hacking Ético</title>
     <!-- Custom Styles -->
-    <link rel="stylesheet" href="/src/styles.css" />
+    <link rel="stylesheet" href="/assets/styles/styles.css" />
   </head>
   <body>
+    <div id="loading-screen"><span class="loader"></span></div>
     <main class="wrapper">
-      <img class="logo" src="/src/assets/imgs/logo.jpg" alt="Logo" />
+      <img class="logo" src="/assets/imgs/logo.jpg" alt="Logo" />
       <h1 class="title">Formulario de Inscripción</h1>
-      <form action="">
+      <form action="" id="inscription-form" class="form">
         <div class="input-group">
           <label for="full-name">Nombre Completo</label>
           <input type="text" id="full-name" name="full_name" required />
@@ -27,6 +28,7 @@
         <div class="input-group">
           <label for="experience-level">Nivel de Experiencia</label>
           <select id="experience-level" name="experience_level" required>
+            <option value="" disabled selected>Selecciona</option>
             <option value="beginner">Principiante</option>
             <option value="intermediate">Intermedio</option>
             <option value="advanced">Avanzado</option>
@@ -35,6 +37,7 @@
         <div class="input-group">
           <label for="favorite-language">Lenguaje Favorito</label>
           <select id="favorite-language" name="favorite_language" required>
+            <option value="" disabled selected>Selecciona</option>
             <option value="python">Python</option>
             <option value="javascript">JavaScript</option>
             <option value="java">Java</option>
@@ -48,6 +51,7 @@
         <button type="submit" class="bg-button">INSCRIBIRME</button>
       </form>
     </main>
-    <script src="/src/script.js"></script>
+    <script src="/assets/scripts/screen-loader.js"></script>
+    <script src="/assets/scripts/form.js"></script>
   </body>
 </html>
