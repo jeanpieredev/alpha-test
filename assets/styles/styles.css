@@ -124,6 +124,7 @@ select:focus {
   font-weight: 500;
 }
 
+/* Loader */
 .loader {
   width: 8px;
   height: 40px;
