@@ -90,5 +90,8 @@ if (isRegistered()) {
     }
   } catch (error) {
     console.error("Error al recuperar los datos de inscripción:", error);
+    /* TODO Show an error message to the user or redirect to the registration form */
+    localStorage.removeItem("inscriptionData");
+    location.reload();
   }
 }
